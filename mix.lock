@@ -1,0 +1,4 @@
+%{
+  "google_protos": {:hex, :google_protos, "0.1.0", "c6b9e12092d17571b093d4156d004494ca143b65dbbcbfc3ffff463ea03467c0", [:mix], [{:protobuf, "~> 0.5", [hex: :protobuf, repo: "hexpm", optional: false]}], "hexpm", "ff5564525f89d2638a4cfa9fb4d31e9ee9d9d7cb937b3e8a95f558440c039e1b"},
+  "protobuf": {:git, "https://github.com/elixir-protobuf/protobuf.git", "21ec7c5bec4fec74e10c1de0d5d1a2d8152ac5d4", []},
+}
