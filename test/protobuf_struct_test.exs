@@ -9,7 +9,7 @@ defmodule ProtobufStructTest do
 
     test "null" do
       assert ProtobufStruct.from_map(%{a: nil}) == %{
-               fields: %{"a" => %{kind: {:null_value, nil}}}
+               fields: %{"a" => %{kind: {:null_value, :NULL_VALUE}}}
              }
     end
 
@@ -90,7 +90,7 @@ defmodule ProtobufStructTest do
 
     test "null" do
       from = %{
-        fields: %{"a" => %{kind: {:null_value, nil}}}
+        fields: %{"a" => %{kind: {:null_value, :NULL_VALUE}}}
       }
 
       to = %{"a" => nil}

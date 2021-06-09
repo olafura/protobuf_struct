@@ -9,7 +9,11 @@ defmodule ProtobufStruct.ValueDecode do
 
   def do_decode(nil), do: nil
 
-  def do_decode({type, v}) when type in [:null_value, :number_value, :string_value, :bool_value],
+  def do_decode({:null_value, :NULL_VALUE}) do
+    nil
+  end
+
+  def do_decode({type, v}) when type in [:number_value, :string_value, :bool_value],
     do: v
 
   def do_decode({:list_value, %{values: values}}) do
